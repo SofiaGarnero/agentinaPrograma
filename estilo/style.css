@@ -1,0 +1,12 @@
+footer{
+  background-color: black;
+}
+
+.container-redes{
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  font-size: 60px;
+ 
+}
+
