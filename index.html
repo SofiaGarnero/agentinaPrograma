@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="./estilo/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/e6a3ce78e7.js" crossorigin="anonymous"></script>
     <title>Formulario de adopción/ provisorio</title>
 </head>
@@ -18,26 +18,25 @@
     <header>
         <div class="container">
             <header
-                class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixed-top text-bg-light p-3 ">
-                <a href="/"
+                class="d-flex flex-wrap justify-content-center py-2 mb-4 border-bottom fixed-top text-bg-light p-3 ">
+                <a href="./index.html"
                     class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <svg class="bi me-2" width="40" height="32">
                         <use xlink:href="#bootstrap"></use>
                     </svg>
-                    <img src="./imagen/Captura.PNG" alt="logo " width="50" height="50 >
-                <span class=" fs-4">Refugio Huellitas</span>
+                    <img src="./imagen/Captura.PNG" alt="logo " width="50" height="50" <span class=" fs-4">Refugio
+                    Huellitas</span>
                 </a>
 
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">pequeñitos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">adopción</a></li>
+                    <li class="nav-item"><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="#pequeñitos" class="nav-link">pequeñitos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">formulario adopción</a></li>
 
                 </ul>
             </header>
         </div>
     </header>
-
 
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -70,72 +69,162 @@
         </button>
     </div>
 
-    <main class="container-fluid mt-1 text-center">
-        <div class="row p-4 p-md-5 mb-4 rounded text-bg-dark">
-            <div class="col px-0 ">
-                <h1 class="display-6 fst-italic ">¿QUIÉNES SOMOS?</h1>
-                <p class="lead my-3">Somos una Asociación Civil sin Fines de lucro, formada por un grupo de voluntarios
-                    que rescatamos animales en situación de calle, les brindamos atención veterinaria, un hogar
-                    provisorio, comida y mucho amor, y una vez que están recuperados les damos la oportunidad de
+    <main class="container-fluid text-center " id="nosotros">
+        <div class="row p-4 p-md-5  rounded text-bg-dark pt-80">
+            <br>
+            <br>
+            <br>
+            <div class="col px-5 ">
+                <h1 class="display-6 fst-italic mt-3">¿QUIÉNES SOMOS?</h1>
+                <p class="lead my-3">Somos una Asociación Civil sin Fines de lucro, formada por un grupo
+                    de voluntarios
+                    que rescatamos animales en situación de calle, les brindamos atención veterinaria,
+                    un hogar
+                    provisorio, comida y mucho amor, y una vez que están recuperados les damos la
+                    oportunidad de
                     encontrar una nueva familia que los quiera y los elija para siempre.</p>
-
+                <img src="./imagen/pexels-mikhail-nilov-7470752.jpg" alt="rescastistas" width="55%" height="55%">
             </div>
         </div>
     </main>
 
-    <div class="container-fluid">
-        <div class="row text-center">
-            <div class="col ">
-                <img src="./imagen/2.jpg" class="img-thumbnail" alt="...">
-                <img src="./imagen/1.jpg" class="img-thumbnail" alt="...">
-                <img src="./imagen/pexels-evg-kowalievska-1170986.jpg" class="img-thumbnail" alt="...">
-                <img src="./imagen/pexels-alena-koval-982300.jpg" class="img-thumbnail" alt="...">
-                <img src="./imagen/pexels-steshka-willems-1390361.jpg" class="img-thumbnail" alt="...">
-                <img src="./imagen/pexels-blue-bird-7210748.jpg" class="img-thumbnail" alt="...">
+    <div class="container-fluid text-center bg-secondary">
+        <div class="row justify-content-center">
+            <h2 class="display-6 fst-italic ">¿Te gustaría recibir nuestras novedades?</h2>
+            <div class="col-8 align-self-center mt-1">
+                <div class="mb-3">
+                    <label for="nombre1" class="form-label">Nombre</label>
+                    <input type="email" class="form-control" id="nombre1" placeholder=" nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email1" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email1" placeholder="name@example.com">
+                    <div class="container-fluid text-center">
+                        <div class="row justify-content-center">
+                            <br>
+                            <button id="botonCorreo" class="btn btn-primary mt-2">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="pequeñitos">
+        <div class="row text-center mt-10 ">
+            <br>
+            <br>
+            <h2 class="display-6 fst-italic mb-md-0 p-md-5">Nuestros rescataditos</h2>
+            <div class="col">
+                <div class="card">
+                    <img src="./imagen/2.jpg" class="card-img-top" alt="perrito1">
+                    <div class="card-body">
+                        <h5 class="card-title">goody</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./imagen/1.jpg" class="card-img-top" alt="perrito2">
+                    <div class="card-body">
+                        <h5 class="card-title">Panchito</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./imagen/pexels-evg-kowalievska-1170986.jpg" class="card-img-top" alt="gato marron ">
+                    <div class="card-body">
+                        <h5 class="card-title">Dulce de leche</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./imagen/pexels-alena-koval-982300.jpg" class="card-img-top" alt="gatito">
+                    <div class="card-body">
+                        <h5 class="card-title">Amelí</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./imagen/pexels-steshka-willems-1390361.jpg" class="card-img-top" alt="perritomarron">
+                    <div class="card-body">
+                        <h5 class="card-title">Dama</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./imagen/pexels-blue-bird-7210748.jpg" class="card-img-top" alt="perro">
+                    <div class="card-body">
+                        <h5 class="card-title">Willy</h5>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container-fluid text-center bg-secondary">
         <div class="row justify-content-center">
-            <h2 class="display-6 fst-italic ">FORMULARIO DE ADOPCIÓN</h2>
+            <h2 class="display-6 fst-italic " id="adopcion">FORMULARIO DE ADOPCIÓN</h2>
             <div class="col-8 align-self-center mt-2">
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nombre Completo</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">
+                    <label for="nombre" class="form-label">Nombre Completo</label>
+                    <input type="email" class="form-control" id="nombre" placeholder=" nombre y apellido">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="0351-...">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="email" class="form-control" id="telefono" placeholder="0351-00000000">
+                </div>
+
+                <div>
+                    <label for="mascota" class="form-label">Seleccione mascota </label>
+                    <select class="form-select" aria-label="seleccione mascota" id="idMascota">
+                        <option value="goody">Goody</option>
+                        <option value="panchito">Panchito</option>
+                        <option value="dulceDeLeche">dulce de leche</option>
+                        <option value="ameli">Amelí</option>
+                        <option value="dama">Dama</option>
+                        <option value="willy">Willy</option>
+                    </select>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="mensaje" class="form-label">Motivo de adopción</label>
+                    <textarea class="form-control" id="mensaje" rows="3"></textarea>
                 </div>
+                <br>
+                <button id="botonFormulario" class="btn btn-primary mb-4">Enviar</button>
             </div>
         </div>
+
     </div>
 
+
+    <footer>
+        <div class="container-redes text-center ">
+            <h3>Refugio Huellitas</h3>
+            <ul>
+                </li><i class="fa-brands fa-twitter"></i></li>
+                </li><i class="fa-brands fa-linkedin"></i></li>
+                </li><i class="fa-brands fa-facebook"></i></li>
+
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.4/jspdf.plugin.autotable.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <script src="./js/formulario1.js"></script>
 </body>
-
-<footer>
-    <h3>Refugio Huellitas| 2023|</h3>
-    <div class="container-redes"></div>
-    <ul>
-        </li><i class="fa-brands fa-twitter"></i></li>
-        </li><i class="fa-brands fa-linkedin"></i></li>
-        </li><i class="fa-brands fa-facebook"></i></li>
-
-    </ul>
-
-</footer>
 
 </html>
